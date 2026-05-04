@@ -43,6 +43,10 @@
         order: -1;
     }
 
+    #about p {
+        text-align: left;
+    }
+
     #portfolio .container>.row:nth-child(1) {
         flex-direction: column;
     }
