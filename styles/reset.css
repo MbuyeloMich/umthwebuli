@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-drag: none;
+}
+
+/* @media (pointer: coarse) {
+  html {
+    touch-action: pan-x pan-y;
+  }
+} */
+
+html {
+  scroll-behavior: unset !important;
+}
+
+img:not(.icon) {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+img {
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+button,
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+input {
+  width: 100%;
+  border-radius: 0 !important;
+  background-color: transparent !important;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  background-color: transparent !important;
+  overflow: hidden;
+  border-radius: 0 !important;
+}
+
+section {
+  backface-visibility: hidden !important;
+  min-height: 0vw;
+}
+
+.placeholder {
+  background-color: var(--gray-light);
+  position: relative;
+}
+
+.open-modal::after {
+  position: absolute;
+  content: "open";
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  font-size: 45px;
+  font-family: "main-regular";
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  mix-blend-mode: difference;
+  color: var(--red);
+  transition: var(--transition) .4s opacity;
+
+}
+
+.placeholder:hover::after {
+  opacity: 1;
+}
+
+.placeholder:has([data-blur]) {
+  pointer-events: none;
+}
+
+[data-blur] {
+  transition: var(--transition) opacity 0.5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  pointer-events: none;
+}
+
+/* 
+
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:hover,
+select:-webkit-autofill,
+select:-webkit-autofill:focus,
+select:-webkit-autofill:hover,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:focus,
+textarea:-webkit-autofill:hover {
+    color: var(--black) !important;
+    -webkit-text-fill-color: var(--black) !important;
+    -webkit-box-shadow: inset 0 0 0 1000px var(--gray) !important;
+    -webkit-background-clip: text !important;
+    background-clip: text !important;
+    background-color: var(--gray) !important;
+}
+
+button:disabled {
+    opacity: 40%;
+    cursor: unset;
+    pointer-events: none;
+} */

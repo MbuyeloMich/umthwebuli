@@ -1,0 +1,12 @@
+:root {
+    --gray-light: #D9D9D9;
+    --white: #FFFFFF;
+    --black: #000000;
+    --red: #FF3A29;
+    --gray: #1E1E1E;
+    --container-padding: clamp(1.5625rem, 0.8125rem + 3.75vw, 4.1875rem);
+    --header-padding: clamp(1.5625rem, 1.1161rem + 2.2321vw, 3.125rem);
+    --section-padding: clamp(3.125rem, 1.5179rem + 8.0357vw, 8.75rem);
+    --paddingX: clamp(2.5rem, 1.4286rem + 5.3571vw, 6.25rem);
+    --transition:cubic-bezier(.28, .88, .76, .87);
+}

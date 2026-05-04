@@ -1,0 +1,196 @@
+@media all and (max-width: 320px) {
+    body {
+        width: 320px;
+    }
+
+    #hero .placeholder {
+        height: 205px !important;
+        width: 155px !important;
+    }
+}
+
+.pin-spacer {
+    will-change: width, height, padding;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+html {
+    overscroll-behavior: none;
+}
+
+::selection {
+    background-color: var(--gray-light);
+    color: var(--white)
+}
+
+body,
+html,
+#app,
+#root {
+    /* width: 100%; */
+    height: 100%;
+}
+
+main {
+    min-height: 100lvh;
+    /* // flex-grow: 1; */
+}
+
+[id*="page"] {
+    min-height: inherit;
+}
+
+#scroll-wrapper {
+    inset: 0;
+    width: 100%;
+    perspective: 1px;
+    backface-visibility: hidden;
+
+}
+
+.scroll-content {
+    min-height: 100% !important;
+    /* height: inherit; */
+    /* // display: flex !important;
+    // flex-direction: column;
+    // will-change: transform; */
+    height: inherit;
+    backface-visibility: hidden;
+    perspective: 1px;
+
+}
+
+.scrollbar-thumb-y {
+    background-color: var(--red) !important;
+    cursor: grab;
+}
+
+.scrollbar-track {
+    background-color: transparent !important;
+}
+
+.scrollbar-track-y {
+    /* mix-blend-mode: exclusion; */
+    background-color: transparent !important;
+    width: 11px !important;
+}
+
+
+div[id*="page"],
+section {
+    overflow: hidden;
+}
+
+.scrollbar-track-x {
+    display: none !important;
+}
+
+@media all and (max-width: 1023px) {
+
+    html body .scrollbar-track-y,
+    html body .scrollbar-thumb-y {
+        display: none !important;
+    }
+}
+
+.container {
+    display: block;
+    margin: 0 auto;
+    max-width: 1440px;
+    padding: 0 var(--container-padding);
+}
+
+body {
+    position: relative;
+}
+
+.parallax-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-image span {
+    position: absolute;
+    bottom: -5%;
+    left: 0;
+    height: 125%;
+    width: 100%;
+
+}
+
+section {
+    background-attachment: fixed !important;
+}
+
+@supports (-webkit-touch-callout: none) {
+    section {
+        background-attachment: scroll !important;
+    }
+}
+
+@supports (-webkit-hyphens: none) {
+    section {
+        background-attachment: scroll !important;
+    }
+}
+
+/*  */
+
+.modal-content {
+    position: fixed;
+    z-index: 55;
+    overflow: hidden;
+    /* overflow-y: auto; */
+    /* scroll-behavior: smooth; */
+    scrollbar-width: thin;
+    /* Firefox */
+    scrollbar-color: var(--red) transparent;
+    /* Firefox */
+}
+
+.modal-content > span.adjust {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: -5%;
+    height: 125%;
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 8px;
+    /* Chrome/Safari */
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background: var(--red);
+    border-radius: 4px;
+}
+
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0 0 0 / 49%);
+    backdrop-filter: blur(4.2px);
+    -webkit-backdrop-filter: blur(8.2px);
+    z-index: 30;
+    opacity: 0;
+    transition: var(--transition) opacity .7s;
+    pointer-events: none;
+}
+
+.open-modal {
+    cursor: pointer;
+}

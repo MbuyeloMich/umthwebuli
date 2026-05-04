@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umthwebuli</title>
+
+    <style>
+        body {
+            background-color: var(--white);
+        }
+
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1000;
+            background-color: var(--red);
+        }
+        
+
+        #loading span.fs-25 {
+            position: absolute;
+            bottom: 5%;
+            left: 2%;
+            z-index: 1001;
+            display: inline-block;
+        }
+
+        #loading .image-group {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            clip-path: inset(0 0 0 100%);
+            height: 100%;
+            transform: scale(65%, 65%);
+            background-color: var(--gray);
+            z-index: 993;
+        }
+
+        #loading .image-group .loading-image {
+            clip-path: inset(0 0 0 100%);
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<!-- preload fonts -->
+<link rel="preload" href="assets/fonts/Anton-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" href="assets/fonts/Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+<link rel="preload" href="assets/fonts/InterDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+
+    
+<link rel="stylesheet" href="styles/typography.css">
+<link rel="stylesheet" href="styles/helpers.css">
+<link rel="stylesheet" href="styles/reset.css">
+<link rel="stylesheet" href="styles/variables.css">
+<link rel="stylesheet" href="styles/index.css">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/media.css">
+
+<body>
+    <div id="loading">
+        <span class="secondary-regular text-white fs-25 capitalize">loading.</span>
+        <div class="image-group">
+
+            <div class="loading-image">
+
+                <span>
+                    <img src="./assets/loading-img-1.png" />
+                </span>
+
+
+
+            </div>
+
+
+
+            <div class="loading-image">
+                <span>
+                    <img src="./assets/loading-img-2.png" />
+                </span>
+
+            </div>
+
+            <div class="loading-image">
+                <span>
+                    <img src="./assets/loading-img-3.png" />
+                </span>
+
+            </div>
+
+            <div class="loading-image">
+
+                <span>
+                    <img src="./assets/loading-img-4.png" />
+                </span>
+
+            </div>
+
+             <div class="loading-image">
+
+                <span>
+                    <img src="./assets/loading-img-6.png" />
+                </span>
+
+            </div>  
+
+            <div class="loading-image">
+
+                <span>
+                    <img src="./assets/loading-img-5.png" />
+                </span>
+
+            </div>
+        </div>
+    </div>
+    <div id="scroll-wrapper" style="position: fixed; height: 100%;">
+        <main>
+            <section id="hero">
+                <header>
+                    <div class="container">
+                        <div class="row s-between center-y wrap">
+                            <ul class="row wrap text-white gap-50">
+                                <li>
+                                    <a href="#" class="capitalize main-regular fs-20">home</a>
+                                </li>
+                                <li>
+                                    <a data-section-to="advantages" class="capitalize main-regular fs-20">company</a>
+                                </li>
+                                <li>
+                                    <a data-section-to="services" class="capitalize main-regular fs-20">work</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="logo">
+                                <h6 class="text-white main-bold">Umthwebuli.</h6>
+                            </a>
+                            <ul class="row wrap text-white gap-50">
+                                <li>
+                                    <a data-section-to="footer" class="capitalize main-regular fs-20">contact</a>
+                                </li>
+                                <li>
+                                    <a data-section-to="about" class="capitalize main-regular fs-20">about us</a>
+                                </li>
+                                <li>
+                                    <a data-section-to="portfolio" class="capitalize main-regular fs-20">journal</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </header>
+                <div class="container full-height">
+                    <div class="center-gr full-height">
+                        <h2 class="up-case secondary-regular text-white">
+                            Umthwebuli
+                        </h2>
+                        <div class="mask">
+                            <h2 class="up-case secondary-regular text-white">
+                                Umthwebuli
+                            </h2>
+                        </div>
+
+                        <div>
+                            <div class="placeholder" style="--rotate-id: -15deg;">
+
+                                <span data-blur>
+                                    <img src="./assets/blur/hush-img-3.png" />
+                                </span>
+
+                                <span>
+                                    <img src="" data-src="./assets/img-3.png" />
+                                </span>
+                            </div>
+                            <div class="placeholder" style="--rotate-id: -10deg;">
+                                <span data-blur>
+                                    <img src="./assets/blur/hush-img-1.png" />
+                                </span>
+
+                                <span>
+                                    <img src="" data-src="./assets/img-1.png" />
+                                </span>
+                            </div>
+                            <div class="placeholder" style="--rotate-id: -4deg;">
+                                <span data-blur>
+                                    <img src="./assets/blur/hush-img-2.png" />
+                                </span>
+
+                                <span>
+                                    <img src="" data-src="./assets/img-2.png" />
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="main-bold text-black fs-30">
+                        Photography is a way to slow perception and notice what passes unnoticed in everyday motion.
+                    </p>
+                    <p class="main-bold text-black fs-30">
+                        Fragments are shaped through observation and quiet attention to form.
+                    </p>
+                </div>
+
+            </section>
+
+            <section id="text-wrap">
+                <div class="container">
+                    <p class="main-bold text-black fs-30">
+                        Photography as a way to slow perception and notice what passes unnoticed in everyday motion.
+                    </p>
+                    <p class="main-bold text-black fs-30">
+                        Fragments shaped through observation and quiet attention to form.
+                    </p>
+
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="container">
+                    <div class="row center-y s-between">
+                        <div class="parallax-image placeholder open-modal">
+
+                            <span data-blur>
+                                <img src="./assets/blur/hush-img-16.png" />
+                            </span>
+
+                            <span>
+                                <img src="" data-src="./assets/img-16.png" />
+                            </span>
+                        </div>
+                        <div>
+                            <p class="main-bold text-black fs-30">
+                                I’m Sakhile Mavimbela, also known as Umthwebuli, a Johannesburg-based photographer capturing the moments that matter — the planned ones and the ones that just happen.
+                            </p>
+                            <p class="main-bold text-black fs-30">
+                                I specialize in portraits, weddings, graduations, events, and street photography with a candid, emotion-driven, unposed style. Documentary meets editorial: natural light, real laughs, and zero awkward “say cheese” moments.
+                            </p>
+                            <p class="main-bold text-black fs-30">
+                                From the tearful hug at graduation, to first dance spins, to quiet street scenes in Maboneng, I’m drawn to stories that feel human. My goal is simple: create images that feel like memories, not just photos.
+                            </p>
+                            <p class="main-bold text-black fs-30">
+                                I’ve been behind the lens for 7 years, working with couples, graduates, families, and brands across Gauteng. When I’m not shooting, you’ll find me scouting new light in Jozi or editing with a strong coffee.
+                            </p>
+                            <div>
+                                <a href="#" class="main-bold text-black fs-30">
+                                    Learn more
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row wrap gap-80">
+                            <div>
+                                <div class="row end-y gap-10">
+                                    <span class="capitalize main-bold text-black fs-30">
+                                        studio
+                                    </span>
+                                    <img class="icon arrow" width="14" height="14" src="./assets/arrow-down.svg" />
+                                </div>
+                            </div>
+                            <p class="main-bold text-black fs-30">
+                                Observing quiet light
+                                and subtle shadows across
+                                everyday spaces. Each frame
+                                is shaped by rhythm and form.
+                            </p>
+                        </div>
+                        <div class="row gap-55">
+                            <div class="placeholder open-modal">
+
+                                <span data-blur>
+                                    <img src="./assets/blur/hush-img-6.png" />
+                                </span>
+
+                                <span>
+                                    <img src="" data-src="./assets/img-6.png" />
+                                </span>
+
+
+
+                            </div>
+                            <div class="column s-between gap-45">
+                                <p class="main-bold text-black fs-30">
+                                    Details emerge through
+                                    careful attention to
+                                    perspective,
+                                    and natural movement.
+                                </p>
+                                <p class="main-bold text-black fs-30">
+                                    Patterns emerge from
+                                    space, texture, and motion
+                                    unnoticed at first glance
+                                </p>
+                                <div>
+                                    <a href="#" class="main-bold text-black fs-30">
+                                        Learn more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row wrap s-between gap-80">
+                        <div>
+                            <div class="row end-y gap-10">
+                                <span class="main-bold text-black fs-30">
+                                    About us
+                                </span>
+                                <img class="icon arrow" width="14" height="14" src="./assets/arrow-down.svg" />
+                            </div>
+                        </div>
+                        <p class="main-bold text-black fs-30">
+                            All shoots are planned with attention
+                            to lighting, location, and timing.
+                            Each session includes careful setup
+                            of camera, lenses, and composition
+                            to ensure consistent quality in final images.
+                        </p>
+
+                    </div>
+
+                    <div class="parallax-image placeholder open-modal">
+                        <span data-blur>
+                            <img src="./assets/blur/hush-img-7.png" />
+                        </span>
+
+                        <span>
+                            <img src="" data-src="./assets/img-7.png" />
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nums">
+                <div class="container">
+                   <div class="row s-between">
+                    <h1 class="secondary-regular text-red">
+                        7
+                    </h1>
+                    <h1 class="secondary-regular text-red">
+                        1
+                    </h1>
+                    <h1 class="secondary-regular text-red">
+                        2
+                    </h1>
+                   </div>
+                </div>
+            </section>
+            <section id="services">
+                <div class="container">
+                    <h4 class="main-bold text-white">
+                        Creative imagery for
+                        every project and space
+                    </h4>
+                    <p class="main-regular text-white fs-30">
+                        We offer a full range of photography services
+                        including portraits, editorial shoots, and
+                        commercial projects. Each session is planned
+                        carefully with attention to lighting, framing,
+                        and detail to ensure high-quality results for
+                        every client and space.
+                        We also provide guidance on styling and props
+                        to enhance the visual outcome of each shoot.
+                    </p>
+                    <div class="row end-x">
+                        <p class="main-regular text-white fs-25">
+                            Our approach combines technical expertise
+                            with creative direction. We handle every
+                            aspect of the shoot, from setup to final
+                            editing, providing images ready for
+                            publication, marketing, or personal use.
+                            We make sure every image aligns with your
+                            project goals and brand identity.
+                        </p>
+                    </div>
+
+                    <div class="row end-x">
+                        <ul class="services-list column gap-20">
+                            <li class="row gap-20">
+                                <span class="main-bold text-white fs-30 ">01</span>
+                                <h4 class="main-bold text-white up-case">STUDIO PORTRAIT</h4>
+                                <div class="list-image placeholder">
+
+                                    <span data-blur>
+                                        <img src="./assets/blur/hush-img-4.png" />
+                                    </span>
+
+                                    <span>
+                                        <img src="" data-src="./assets/img-4.png" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="row gap-20">
+                                <span class="main-bold text-white fs-30 ">02</span>
+                                <h4 class="main-bold text-white up-case">WEDDING</h4>
+                                <div class="list-image placeholder">
+
+                                    <span data-blur>
+                                        <img src="./assets/blur/hush-img-8.png" />
+                                    </span>
+
+                                    <span>
+                                        <img src="" data-src="./assets/img-8.jpg" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="row gap-20">
+                                <span class="main-bold text-white fs-30 ">03</span>
+                                <h4 class="main-bold text-white up-case">ENGAGEMENT</h4>
+                                <div class="list-image placeholder">
+
+                                    <span data-blur>
+                                        <img src="./assets/blur/hush-img-9.png" />
+                                    </span>
+
+                                    <span>
+                                        <img src="" data-src="./assets/img-9.jpg" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="row gap-20">
+                                <span class="main-bold text-white fs-30 ">04</span>
+                                <h4 class="main-bold text-white up-case">BABY SHOWER</h4>
+                                <div class="list-image placeholder">
+
+                                    <span data-blur>
+                                        <img src="./assets/blur/hush-img-10.png" />
+                                    </span>
+
+                                    <span>
+                                        <img src="" data-src="./assets/img-10.jpg" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="row gap-20">
+                                <span class="main-bold text-white fs-30 ">05</span>
+                                <h4 class="main-bold text-white up-case">MATRIC DANCE</h4>
+                                <div class="list-image placeholder">
+
+                                    <span data-blur>
+                                        <img src="./assets/blur/hush-img-11.png" />
+                                    </span>
+
+                                    <span>
+                                        <img src="" data-src="./assets/img-11.jpg" />
+                                    </span>
+                                </div>
+                            </li>
+                            <li class="row gap-20">
+                                <span class="main-bold text-white fs-30 ">06</span>
+                                <h4 class="main-bold text-white up-case">GRADUATION</h4>
+                                <div class="list-image placeholder">
+                                    <span data-blur>
+                                        <img src="./assets/blur/hush-img-13.png" />
+                                    </span>
+
+                                    <span>
+                                        <img src="" data-src="./assets/img-13.jpg" />
+                                    </span>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="advantages">
+                <div class="container">
+                    <div class="row wrap s-between gap-80">
+                        <div>
+                            <div class="row start-y gap-10">
+                                <span class="main-bold text-black fs-30">
+                                    Why choose us
+                                </span>
+                                <img class="icon arrow" width="14" height="14" src="./assets/arrow-down.svg" />
+                            </div>
+                        </div>
+                        <p class="main-bold text-black fs-30">
+                            All shoots are planned with attention
+                            to lighting, location, and timing.
+                            Each session includes careful setup
+                            of camera, lenses, and composition
+                            to ensure consistent quality in final images.
+                        </p>
+
+                    </div>
+                    <div class="row">
+                        <div class="column s-between gap-40">
+
+                            <div class="grid gap-80">
+
+                                <span class="main-bold text-black fs-20">portrait photography sessions.</span>
+                                <span class="main-bold text-black fs-20">creative direction support.</span>
+                                <span class="main-bold text-black fs-20">commercial visual content.</span>
+
+
+                                <span class="main-bold text-black fs-20">editorial photo production.</span>
+                            </div>
+
+                            <p class="main-bold text-black fs-20">
+                                All projects begin with clear planning and visual references.
+                                We consider mood, environment, and purpose to shape a consistent visual direction
+                                throughout the entire shoot.
+
+                            </p>
+                        </div>
+                        <div class="placeholder parallax-image open-modal">
+
+                            <span data-blur>
+                                <img src="./assets/blur/hush-img-14.png" />
+                            </span>
+
+                            <span>
+                                <img src="" data-src="./assets/img-14.png" />
+                            </span>
+
+                        </div>
+
+                    </div>
+                    <div class="row end-x">
+                        <h4 class="main-bold text-black up-case">
+                            since 2017
+                        </h4>
+                    </div>
+                    <div class="row s-between wrap gap-40">
+                        <p class="main-bold text-black fs-20">
+                            Every project starts with understanding the story behind the subject and the purpose of the
+                            images.
+                            We focus on atmosphere, composition, and natural interaction to create photographs that feel
+                            honest
+                            and intentional. Careful preparation allows the shoot to remain flexible while maintaining a
+                            clear
+                            visual direction from the first frame to the final selection. Each detail — light, movement,
+                            and
+                            timing — is considered to achieve consistent and meaningful results across the entire
+                            project.
+                        </p>
+
+                        <div class="column gap-20">
+                            <p class="main-bold text-black fs-20">
+                                Portrait sessions are designed to feel comfortable and natural, helping people express
+                                personality
+                                without forced poses. Guidance is subtle, allowing authentic moments to appear
+                                organically during
+                                the shoot.
+                            </p>
+
+                            <p class="main-bold text-black fs-20">
+                                Editorial and commercial work focuses on visual storytelling aligned with brand
+                                identity. We balance
+                                creative direction with practical goals to produce images suitable for campaigns,
+                                publications,
+                                and digital platforms.
+                            </p>
+
+                            <p class="main-bold text-black fs-20">
+                                Location scouting and lighting decisions are made in advance to ensure efficiency on
+                                set. This
+                                preparation allows more time for experimentation and capturing unexpected but valuable
+                                moments.
+                            </p>
+
+                            <p class="main-bold text-black fs-20">
+                                Post-production is approached with restraint, enhancing color, contrast, and clarity
+                                while preserving
+                                realism. The final images are delivered optimized for print, web, or large-scale
+                                presentation depending
+                                on project needs. The goal is to create photographs
+                                that remain visually strong over time, suitable for portfolios, publications, campaigns,
+                                and personal
+                                archives while maintaining a clear and recognizable visual identity throughout the
+                                project.
+                            </p>
+                        </div>
+                        <div class="placeholder open-modal">
+                            <span data-blur>
+                                <img src="./assets/blur/hush-img-15.png" />
+                            </span>
+
+                            <span>
+                                <img src="" data-src="./assets/img-15.png" />
+                            </span>
+                        </div>
+                    </div>
+                    <div class="row end-x">
+                        <a href="#" class="main-bold text-black fs-30">
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="quote">
+                <div class="container">
+                    <h3 class="main-bold text-black">
+                        <span class="text-red">
+                            Let’s
+                        </span>
+                        <span>
+                            turn
+                        </span>
+                        <span class="text-red">
+                            memories
+                        </span>
+                        <span>
+                            into
+                        </span>
+                        <span class="text-red">
+                            timeless
+                        </span>
+                        <span>
+                            visuals!
+                        </span>
+                    </h3>
+                </div>
+            </section>
+            <section id="portfolio">
+                <div class="container">
+                    <div class="row gap-80">
+                        <div class="row start-y gap-10">
+                            <span class="main-bold text-black fs-30 capitalize">
+                                Our portfolio
+                            </span>
+                            <img class="icon arrow" width="14" height="14" src="./assets/arrow-down.svg" />
+                        </div>
+                        <div>
+                            <p class="main-bold text-black fs-30">
+                                This portfolio brings together selected projects created across different environments
+                                and
+                                conditions. Each series focuses on observation, light, and timing, showing how
+                                atmosphere and
+                                subject interact to form a consistent visual narrative.
+                            </p>
+                            <ul>
+                                <li class="active">
+                                    <div class="row s-between center-y gap-5">
+                                        <h5 class="main-bold text-black up-case">LANDSCAPE PHOTOGRAPHY</h5>
+                                        <div class="dot"></div>
+                                    </div>
+                                    <div class="content">
+                                        <p class="main-bold text-black fs-20">
+                                            Landscape photography explores scale, light, and natural rhythm. Each image
+                                            is captured with
+                                            attention to weather, depth, and composition to preserve the feeling of a
+                                            real place rather
+                                            than a staged scene.
+                                        </p>
+                                        <div class="row center-y gap-80">
+                                            <div class="layers">
+                                                <div class="placeholder open-modal">
+                                                    <span data-blur>
+                                                        <img src="./assets/blur/hush-img-17.png" />
+                                                    </span>
+
+                                                    <span>
+                                                        <img src="" data-src="./assets/img-17.png" />
+                                                    </span>
+
+
+                                                </div>
+                                                <div class="layer"></div>
+                                            </div>
+                                            <p class="main-bold text-black fs-20">
+                                                Locations are researched in advance to understand seasonal light and
+                                                environmental conditions.
+                                                The process often involves waiting for precise moments when atmosphere
+                                                and movement align,
+                                                allowing the landscape to appear calm, structured, and visually balanced
+                                                without artificial
+                                                intervention or heavy manipulation.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row s-between center-y gap-5">
+                                        <h5 class="main-bold text-black up-case">MACRO PHOTOGRAPHY</h5>
+                                        <div class="dot"></div>
+                                    </div>
+                                    <div class="content">
+                                        <p class="main-bold text-black fs-20">
+                                            Macro photography reveals details usually unnoticed by the eye. Texture,
+                                            structure, and
+                                            micro-contrast become the main subjects, transforming small objects into
+                                            complex visual forms.
+                                        </p>
+                                        <div class="row center-y gap-80">
+                                            <div class="layers">
+                                                <div class="placeholder open-modal">
+                                                    <span data-blur>
+                                                        <img src="./assets/blur/hush-img-18.png" />
+                                                    </span>
+
+                                                    <span>
+                                                        <img src="" data-src="./assets/img-18.jpg" />
+                                                    </span>
+
+
+                                                </div>
+                                                <div class="layer"></div>
+                                            </div>
+                                            <p class="main-bold text-black fs-20">
+                                                Specialized lenses and controlled lighting setups allow precise focus on
+                                                surface details, reflections, and micro-contrast. Each image highlights
+                                                material quality and intricate design, making this category ideal for
+                                                product campaigns, botanical studies, and conceptual close-up work.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row s-between center-y gap-5">
+                                        <h5 class="main-bold text-black up-case">WILDLIFE PHOTOGRAPHY</h5>
+                                        <div class="dot"></div>
+                                    </div>
+                                    <div class="content">
+                                        <p class="main-bold text-black fs-20">
+                                            Wildlife photography capturing authentic behavior in natural habitats.
+                                            The emphasis is on patience, timing, and respectful distance, allowing
+                                            animals to remain undisturbed while documenting natural movement,
+                                            interaction, and atmosphere within their environment.
+                                        </p>
+                                        <div class="row center-y gap-80">
+                                            <div class="layers">
+                                                <div class="placeholder open-modal">
+                                                    <span data-blur>
+                                                        <img src="./assets/blur/hush-img-20.png" />
+                                                    </span>
+
+                                                    <span>
+                                                        <img src="" data-src="./assets/img-20.jpg" />
+                                                    </span>
+
+
+                                                </div>
+                                                <div class="layer"></div>
+                                            </div>
+                                            <p class="main-bold text-black fs-20">
+                                                Shoots are planned around migration patterns, light direction, and
+                                                terrain.
+                                                Fast shutter speeds and long focal lengths ensure clarity without
+                                                disturbing
+                                                the environment. The goal is to document movement and instinct while
+                                                preserving
+                                                the realism of the moment for documentary and publication use.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row s-between center-y gap-5">
+                                        <h5 class="main-bold text-black up-case">SPORTS PHOTOGRAPHY</h5>
+                                        <div class="dot"></div>
+                                    </div>
+                                    <div class="content">
+                                        <p class="main-bold text-black fs-20">
+                                            Sports photography centered on motion, reaction, and peak performance.
+                                            Each frame isolates decisive moments within fast-paced environments,
+                                            capturing both the intensity of action and the subtle expressions
+                                            that reveal focus, determination, and athletic skill.
+                                        </p>
+                                        <div class="row center-y gap-80">
+                                            <div class="layers">
+                                                <div class="placeholder open-modal">
+                                                    <span data-blur>
+                                                        <img src="./assets/blur/hush-img-5.png" />
+                                                    </span>
+
+                                                    <span>
+                                                        <img src="" data-src="./assets/img-5.jpg" />
+                                                    </span>
+
+
+                                                </div>
+                                                <div class="layer"></div>
+                                            </div>
+                                            <p class="main-bold text-black fs-20">
+                                                High-speed shooting combined with strategic positioning captures
+                                                intensity
+                                                and physical precision. Attention is given to dynamic angles, contrast,
+                                                and crowd atmosphere to create impactful visuals suitable for media,
+                                                brand partnerships, and athlete portfolios.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="row s-between center-y gap-5">
+                                        <h5 class="main-bold text-black up-case">FASHION PHOTOGRAPHY</h5>
+                                        <div class="dot"></div>
+                                    </div>
+                                    <div class="content">
+                                        <p class="main-bold text-black fs-20">
+                                            Fashion photography blending structured styling with expressive direction.
+                                            The focus lies on silhouette, texture, and narrative presence, capturing
+                                            both the movement of fabric and the personality of the model to create
+                                            striking visuals that tell a cohesive story for editorial or campaign use.
+                                        </p>
+                                        <div class="row center-y gap-80">
+                                            <div class="layers">
+                                                <div class="placeholder open-modal">
+                                                    <span data-blur>
+                                                        <img src="./assets/blur/hush-img-19.png" />
+                                                    </span>
+
+                                                    <span>
+                                                        <img src="" data-src="./assets/img-19.jpg" />
+                                                    </span>
+
+                                                </div>
+                                                <div class="layer"></div>
+                                            </div>
+                                            <p class="main-bold text-black fs-20">
+                                                Collaborations with stylists, makeup artists, and creative directors
+                                                ensure
+                                                cohesive visual storytelling. Studio and on-location shoots are designed
+                                                to
+                                                highlight fabric movement, lighting contrast, and brand identity,
+                                                delivering
+                                                imagery ready for lookbooks, campaigns, and editorial publications.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </li>
+
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="container">
+                <h2 class="up-case secondary-regular text-red">
+                    <span>u</span><span>m</span><span>t</span><span>h</span><span>w</span><span>e</span><span>b</span><span>u</span><span>l</span><span>i</span>
+                </h2>
+            </div>
+            <div class="container">
+                <div class="row s-between center-y gap-30">
+                    <ul class="column gap-10 start-y">
+                        <li>
+                            <a data-section-to="hero" class="main-regular text-black fs-25">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a data-section-to="about" class="main-regular text-black fs-25">
+                                About
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a data-section-to="quote" class="main-regular text-black fs-25">
+                                How it works
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-regular text-black fs-25">
+                                Our blog
+                            </a>
+                        </li>
+
+                    </ul>
+
+                    <ul class="column gap-10 center-y">
+                        <li>
+                            <a data-section-to="services" class="main-regular text-black fs-25" href="#">
+                                Services
+
+                            </a>
+                        </li>
+                        <li>
+                            <a data-section-to="advantages" class="main-regular text-black fs-25" href="#">
+                                Choose Now
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a data-section-to="portfolio" class="main-regular text-black fs-25" href="#">
+                                Collection
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                    <ul class="column gap-10 end-y">
+                        <li>
+                            <a class="main-regular text-black fs-25" href="#">
+                                Instagram
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="main-regular text-black fs-25" href="#">
+                                Facebook
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="main-regular text-black fs-25" href="#">
+                                Twitter
+
+                            </a>
+                        </li>
+                        <li>
+                            <a class="main-regular text-black fs-25" href="#">
+                                Linked
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row wrap s-between center-y gap-40">
+                    <p class="main-regular text-black fs-20">
+                        © 2026 UMTHWEBULI. All rights reserved.
+                    <p>
+                    <ul class="row gap-20">
+                        <li>
+                            <a href="#">
+                                <img class="icon" width="50" height="50" src="./assets/instagram.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon" width="50" height="50" src="./assets/facebook.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon" width="50" height="50" src="./assets/linkedin.svg" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img class="icon" width="50" height="50" src="./assets/twitter.svg" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+
+    <div class="modal-root">
+        <div class="overlay"></div>
+    </div>
+    <script src="libs/lazyLoading/lazyLoading.js"></script>
+    <script src="libs/scroll/smooth-scrollbar.min.js"></script>
+    <script src="libs/gsap/gsap.min.js"></script>
+    <script src="libs/gsap/scrolltrigger.min.js"></script>
+    <script SRC="libs/gsap/spilttext.min.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>

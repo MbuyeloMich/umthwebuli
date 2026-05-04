@@ -1,0 +1,100 @@
+@media all and (max-width: 720px),
+(max-height: 570px) {
+    #hero .placeholder {
+        height: 320px;
+        width: 230px
+    }
+}
+
+
+@media all and (max-width: 780px),
+(max-height: 800px) {
+    #hero p {
+        display: none;
+    }
+
+    #text-wrap {
+        display: block;
+    }
+
+}
+
+
+@media all and (max-width: 760px) {
+
+    #about .container>.row:nth-child(1),
+    #about .container>div:nth-child(2)>.row:nth-child(2),
+    #advantages .container>div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    #about .container>.row:nth-child(1)>div,
+    #advantages .container>div:nth-child(2)>div:nth-child(2) {
+        width: 100% !important;
+        max-width: initial !important;
+    }
+
+    #advantages .container>.row:nth-child(4) .placeholder {
+        position: relative;
+        order: -1;
+    }
+
+    #advantages .container>.row:nth-child(4) p:nth-child(1) {
+        order: -1;
+    }
+
+    #portfolio .container>.row:nth-child(1) {
+        flex-direction: column;
+    }
+
+    #portfolio li .dot {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    #services li span {
+        transform: translateY(18%);
+        font-size: clamp(0.625rem, 0.1705rem + 2.2727vw, 1.25rem);
+    }
+
+    #services li .list-image {
+        width: 20vw;
+        height: 30vw;
+    }
+
+    /* #nums h1 {
+        font-size: clamp(9.5rem, -0.9091rem + 52.0455vw, 23.8125rem);
+    } */
+}
+
+@media all and (max-width: 520px) {
+    header .logo {
+        display: none;
+    }
+
+    header ul {
+        justify-content: space-between;
+        width: 100%;
+    }
+
+
+    footer>.container:nth-child(2)>.row {
+        flex-direction: column;
+    }
+
+    footer>.container:nth-child(2)>.row>ul {
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 900px) {
+    #portfolio li .content>div:nth-child(2) {
+        flex-direction: column;
+    }
+
+    #portfolio li .content>div:nth-child(2)>div,
+    #portfolio li .content>div:nth-child(2)>p {
+        width: 100%;
+        max-width: unset;
+    }
+}
